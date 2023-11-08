@@ -1,0 +1,47 @@
+site_name: Polina Arbuzova      
+theme:                  ##under theme goes everything design related
+    name: material
+    logo: assets/images/watermelon_logo.png
+    palette:
+      scheme: default
+      primary: teal
+      accent: indigo
+    features: 
+      - navigation.tabs
+      - navigation.top 
+      - navigation.tabs.sticky  
+docs_dir: docs
+nav:
+  - About me: index.md ##this is fixed! The .md file of the landing page needs to be named "index.md"
+  - CV: CV.md
+  - Publications: publications.md
+  - Outreach: outreach.md
+  - Contact: contact.md
+  - Other: other.md
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - codehilite
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
